@@ -1,8 +1,4 @@
 import os
-
-os.environ["OPENAI_API_KEY"] = "sk-Pr6Ye2wTLQ05aczR6riYQLjBT4znKzketM93YxfucfYcUZUI"
-os.environ["OPENAI_BASE_URL"] = "https://pro.xiaoai.plus/v1"
-
 from call_llm import model_factory, Message
 import json
 import pandas as pd
