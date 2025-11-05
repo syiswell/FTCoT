@@ -1,0 +1,40 @@
+Given a piece of debate dialogue text and a task instruction, first analyze the structure and quality of the debate dialogue text, and then analyze the key points that may need to be considered to solve the task.
+The specific analysis guidelines are provided below.
+
+**Argument Structure**:
+
+    - Analyze the text's argument structure. Identify the central thesis or main claim, key evidence, and how counterarguments are addressed.
+
+    - Outline the main logical and reasoning flow.
+
+**Argument Quality**:
+
+    - Highlight the main strengths and primary weaknesses.
+
+    - Overall Evaluation: Assess the overall quality and persuasiveness of the given debate dialogue text, and provide an overall rating as an integer between 1 (lowest) to 5 (highest).
+
+**Key Considerations for Solving the Task**:
+
+    - Based on the given debate dialogue text, explain in detail the key arguments, content, strategies, etc., that may need to be considered to solve the task.
+
+**Note**: 
+
+    - You only need to analyze the following text according to the above requirements. You do not need to actually complete the task specified in the **Task Instruction**.
+
+    - Throughout your analysis, provide specific examples from the debate dialogue text to support your judgments.
+
+    - Please try to give a response of about 300 words.
+
+Now, the debate dialogue text and task instruction are provided below for your analysis:
+
+```
+**Task Instruction**:
+
+{task_inst}
+
+
+**debate dialogue Text**:
+
+{arg_text}
+
+```

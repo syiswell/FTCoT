@@ -1,0 +1,47 @@
+Given a task instruction, the corresponding input debate dialogue text, and a candidate response, your task is to first analyze the argument structure and quality of the candidate response. Then, evaluate whether the candidate response effectively address the task, and provide suggestions for improvement.
+The specific analysis guidelines are provided below.
+
+**Argument Structure**:
+
+    - Analyze the candidate response's argument structure. Identify the central thesis or main claim, key evidence, and how counterarguments are addressed.
+
+    - Outline the main logical and reasoning flow.
+
+**Argument Quality**:
+
+    - Highlight the main strengths and primary weaknesses.
+
+    - Overall Evaluation: Assess the overall quality and persuasiveness of the candidate response, and provide an overall rating as an integer between 1 (lowest) to 5 (highest).
+
+**Task Effectiveness**:
+
+    - Assess how well the candidate response addresses the task instruction. Highlight any areas where the response falls short or excels.
+
+    - Give suggestions to enhance the candidate response to better address the task.
+
+**Note**: 
+
+    - You only need to analyze the following text according to the above requirements. You do not need to actually complete the task specified in the **Task Instruction**.
+
+    - Throughout your analysis, provide specific examples from the candidate response and the debate dialogue text to support your judgments.
+
+    - Please try to give a response of about 300 words.
+
+Now, the task instruction, the corresponding input debate dialogue text, and the candidate response are provided below for your analysis:
+
+```
+**Task Instruction**:
+
+{task_inst}
+
+
+**Debate Dialogue Text**:
+
+{arg_text}
+
+
+**Candidate Response**:
+
+{cand_resp}
+
+```
