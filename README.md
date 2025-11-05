@@ -26,8 +26,6 @@ FTCoT是一个用于论辩对话处理、模型训练与响应优化的工具框
 
 ### 1. 数据预处理
 
-以 Reddit 对话数据为例，处理成模型可训练的格式：
-
 ```bash
 python pre_process/step1_construct_reddit_data.py
 ```
@@ -36,10 +34,7 @@ python pre_process/step1_construct_reddit_data.py
 
 ```bash
 # 生成论证分析数据
-python post_process/argument_analysis/prepare_for_sft.py
-
-# 优化响应
-python post_process/response_optimization/prepare_for_sft.py
+python post_process/*.py
 ```
 
 ### 3. 模型训练
@@ -60,11 +55,8 @@ FTCoT/
 ├── pre_process/          # 数据预处理脚本
 ├── train/                # 模型训练相关（SFT/PPO/模型加载）
 ├── post_process/         # 后处理（论证分析、响应优化）
-│   ├── argument_analysis/
-│   └── response_optimization/
 ├── utils.py              # 通用工具函数（JSON/JSONL 读写等）
-├── call_llm.py           # LLM 调用基础类
-└── test.py               # LLM 调用示例
+└── call_llm.py           # LLM 调用基础类
 ```
 
 
